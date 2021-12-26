@@ -1,0 +1,28 @@
+// ===== TEXT ===== 
+$font-family: 'Montserrat', sans-serif;
+$text-weight: 400;
+$semi-bold: 600;
+$bold: 700;
+$text-size: 1.25vw;
+$header-size: 2.7rem;
+$sub-header-size: 1.67rem;
+
+
+//===== COLORS =====
+$primary-blue: #0E1625;
+$primary-blue-lighter: #131d31;
+$primary-blue-darker: #070b12;
+$primary-white: #ffffff;
+$secondary-blue: #223daa;
+$secondary-gray: #dbdee6;
+$accent-red: #9e0800;
+$accent-yellow: #fbaf00;
+
+// gradient mixin taking in color and direction as parameters
+
+// ===== SPACING DETAILS ===== 
+$border-radius: 5px;
+$margin-left-desktop: 105px;
+
+// ===== ANIMATIONS =====
+$regular-transition: all 300ms linear;

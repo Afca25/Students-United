@@ -1,0 +1,13 @@
+@use './Styles/index' as *;
+
+//===== GOOGLE FONT =====
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+// Remember to use _index.scss with @use 
+
+
+// Thanks to this new live Sass compiler I installed (it's a fork of the most known one) I don't need to use @import './Styles/font';
+
+.App {
+  width: 100vw;
+}
+

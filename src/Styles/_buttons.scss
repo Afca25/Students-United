@@ -1,0 +1,28 @@
+@use './variables' as v;
+
+.btn {
+  border: none;
+  border-radius: v.$border-radius;
+  font-size: v.$text-size;
+  font-weight: v.$bold;
+  background: none;
+  padding: 5px 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: v.$regular-transition;
+
+  &.primary {
+    background-color: v.$accent-red;
+    color: v.$primary-white;
+  }
+
+  &.secondary {
+    border: 1px solid v.$accent-yellow;
+    color: v.$accent-yellow;
+
+    &:hover {
+      background-color: v.$accent-yellow;
+      color: v.$primary-white;
+    }
+  }
+}

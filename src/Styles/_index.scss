@@ -1,0 +1,5 @@
+//This file is to @forward all the partials and use @use only once on App.scss
+
+@forward './variables';
+@forward './pre-conditions';
+@forward './buttons';
