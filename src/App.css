@@ -52,15 +52,14 @@ h2 {
 
 /* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
 .home__container {
+  background: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0)), url("../Resources/heroHome.jpg") center;
   /* background-image: url("../Resources/heroHome.jpg"); */
-  height: 100vh- 61px;
-  z-index: -1;
+  height: 100%;
 }
 .home__gradient {
-  background-image: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0));
-  height: 100vh- 61px;
+  /*    background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0)); */
+  height: 80%;
   width: 100vw;
-  z-index: 0;
 }
 .home__header {
   color: #ffffff;
@@ -71,7 +70,6 @@ h2 {
 .home__text-content {
   padding: 25vh 0;
   padding-left: 7.5vw;
-  z-index: 1;
 }
 .home__btn {
   padding-left: 15vw;
@@ -102,5 +100,5 @@ h2 {
 }
 
 .App {
-  width: 100vw;
+  /*   width: 100vw; */
 }/*# sourceMappingURL=App.css.map */

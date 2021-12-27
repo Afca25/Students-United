@@ -3,18 +3,16 @@
 
 .home__ {
   &container {
-  
+    background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0)), url('../Resources/heroHome.jpg') center;
+
    /* background-image: url("../Resources/heroHome.jpg"); */
-   height: (100vh - 61px);
-   z-index: -1;
+   height: (100%);
   }
 
   &gradient {
-    border: 2px solid black;
-    background-image: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0)) cover;
-    /* height: (100vh - 61px); */
+ /*    background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0)); */
+    height: 80%;
     width: 100vw;
-    z-index: 0;
   }
 
   &header {
@@ -28,7 +26,6 @@
   &text-content {
     padding: 25vh 0;
     padding-left: $margin-left-desktop;
-    z-index: 1;
   }
 
   &btn {
