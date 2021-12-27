@@ -8,3 +8,13 @@
   font-family: v.$font-family;
   font-weight: v.$text-weight;
 }
+
+h1 {
+  font-size: v.$header-size;
+  font-weight: v.$bold;
+}
+
+h2 {
+  font-size: v.$sub-header-size;
+  font-weight: v.$semi-bold;
+}

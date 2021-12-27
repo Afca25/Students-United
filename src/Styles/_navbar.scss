@@ -1,0 +1,40 @@
+@use './variables' as *;
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-blue-darker;
+
+  &__logo {
+    width: 150px;
+    height: 40px;
+    padding-left: 3.5vw;
+  }
+
+
+  &__links {
+    display: flex;
+
+    & ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      gap: 3rem;
+
+      & a {
+        text-decoration: none;
+        color: $secondary-gray;
+
+        &:hover {
+          color: $primary-white;
+        }
+      }
+    }
+  }
+
+  &__button {
+    padding: 0 3.5vw;
+  }
+}

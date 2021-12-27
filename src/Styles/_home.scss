@@ -1,0 +1,38 @@
+/* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
+@use './variables' as *;
+
+.home__ {
+  &container {
+  
+   /* background-image: url("../Resources/heroHome.jpg"); */
+   height: (100vh - 61px);
+   z-index: -1;
+  }
+
+  &gradient {
+    border: 2px solid black;
+    background-image: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0)) cover;
+    /* height: (100vh - 61px); */
+    width: 100vw;
+    z-index: 0;
+  }
+
+  &header {
+    color: $primary-white;
+  }
+
+  &sub-header {
+    color: $secondary-gray;
+  }
+
+  &text-content {
+    padding: 25vh 0;
+    padding-left: $margin-left-desktop;
+    z-index: 1;
+  }
+
+  &btn {
+    padding-left: 15vw;
+  }
+
+}

@@ -8,6 +8,75 @@
   font-weight: 400;
 }
 
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.67rem;
+  font-weight: 600;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070b12;
+}
+.navbar__container__logo {
+  width: 150px;
+  height: 40px;
+  padding-left: 3.5vw;
+}
+.navbar__container__links {
+  display: flex;
+}
+.navbar__container__links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+.navbar__container__links ul a {
+  text-decoration: none;
+  color: #dbdee6;
+}
+.navbar__container__links ul a:hover {
+  color: #ffffff;
+}
+.navbar__container__button {
+  padding: 0 3.5vw;
+}
+
+/* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
+.home__container {
+  /* background-image: url("../Resources/heroHome.jpg"); */
+  height: 100vh- 61px;
+  z-index: -1;
+}
+.home__gradient {
+  background-image: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0));
+  height: 100vh- 61px;
+  width: 100vw;
+  z-index: 0;
+}
+.home__header {
+  color: #ffffff;
+}
+.home__sub-header {
+  color: #dbdee6;
+}
+.home__text-content {
+  padding: 25vh 0;
+  padding-left: 7.5vw;
+  z-index: 1;
+}
+.home__btn {
+  padding-left: 15vw;
+}
+
 .btn {
   border: none;
   border-radius: 5px;
