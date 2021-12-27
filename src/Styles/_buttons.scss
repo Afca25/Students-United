@@ -13,7 +13,13 @@
 
   &.primary {
     background-color: v.$accent-red;
+    border: 1px solid v.$accent-red;
     color: v.$primary-white;
+
+    &:hover {
+      background-color: v.$accent-red-darker;
+      border-color: v.$accent-red-darker;
+    }
   }
 
   &.secondary {

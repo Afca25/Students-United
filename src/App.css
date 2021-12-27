@@ -52,14 +52,12 @@ h2 {
 
 /* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
 .home__container {
-  background: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0)), url("../Resources/heroHome.jpg") center;
-  /* background-image: url("../Resources/heroHome.jpg"); */
   height: 100%;
 }
 .home__gradient {
-  /*    background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0)); */
-  height: 80%;
-  width: 100vw;
+  background: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0));
+  width: 100%;
+  padding-bottom: 30vh;
 }
 .home__header {
   color: #ffffff;
@@ -69,10 +67,11 @@ h2 {
 }
 .home__text-content {
   padding: 25vh 0;
-  padding-left: 7.5vw;
+  padding-left: 10vw;
 }
-.home__btn {
-  padding-left: 15vw;
+.home__btn#cta {
+  padding-left: 20vw;
+  margin-bottom: auto;
 }
 
 .btn {
@@ -88,7 +87,12 @@ h2 {
 }
 .btn.primary {
   background-color: #9e0800;
+  border: 1px solid #9e0800;
   color: #ffffff;
+}
+.btn.primary:hover {
+  background-color: #660500;
+  border-color: #660500;
 }
 .btn.secondary {
   border: 1px solid #fbaf00;
