@@ -1,0 +1,67 @@
+/* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
+@use './variables' as *;
+
+.about-us__ {
+  &container {
+    height: 100%;
+    position: relative;
+  }
+
+  &gradient {
+    padding-bottom: 30vh;
+  }
+
+  &header {
+    color: $primary-white;
+    margin-bottom: $margin-bottom-desktop;
+  }
+  
+  &sub-header {
+    color: $secondary-gray;
+    margin-bottom: $margin-bottom-desktop;
+  }
+  
+  &text-content {
+    padding: 25vh 0 0 0;
+    padding-left: $margin-left-desktop;
+    margin-bottom: $margin-bottom-desktop;
+  }
+
+  &panel__{
+  
+    &container {
+      width: 100%;
+      height: 290px;
+      background-color: $primary-blue;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 25px;
+
+      & p + p {
+        font-weight: $semi-bold;
+      }
+    }
+
+  }
+
+  .icon {
+    color: $accent-yellow;
+    size: 1.5rem;
+  }
+
+}
+
+.gradient {
+  background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0));
+  width: 100%;
+}

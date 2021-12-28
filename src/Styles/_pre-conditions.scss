@@ -12,9 +12,22 @@
 h1 {
   font-size: v.$header-size;
   font-weight: v.$bold;
+  color: v.$primary-white;
 }
 
 h2 {
   font-size: v.$sub-header-size;
   font-weight: v.$semi-bold;
+  color: v.$secondary-gray;
+}
+
+a.link {
+  color: v.$accent-yellow;
+  font: inherit;
+  font-weight: v.$semi-bold;
+  text-decoration: none;
+}
+
+p {
+  color: v.$secondary-gray
 }

@@ -7,8 +7,6 @@
   }
 
   &gradient {
-    background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0));
-    width: 100%;
     padding-bottom: 30vh;
   }
 
@@ -30,4 +28,9 @@
     margin-bottom: auto;
   }
 
+}
+
+.gradient {
+  background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0));
+  width: 100%;
 }
