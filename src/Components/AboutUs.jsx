@@ -1,5 +1,6 @@
 import React from 'react'
 import heroAboutUs from '../Resources/heroAboutUs.jpg'
+import { IconContext } from "react-icons";
 import { FaBook, FaGlobe, FaLaptop  } from "react-icons/fa";
 
 function AboutUs() {
@@ -23,7 +24,9 @@ function AboutUs() {
           and specialists for you
           </h2>
         </section>
+        <IconContext.Provider value={{style: { fontSize: '40px', color: '#fbaf00'}}}>
         <section className="about-us__panel__container">
+
           <div className="about-us__panel__content">
             <FaBook className='icon' />
             <p>Private Tutoring</p>
@@ -46,6 +49,7 @@ function AboutUs() {
           </div>
 
         </section>
+        </IconContext.Provider>
       </div>
     </div>
   )

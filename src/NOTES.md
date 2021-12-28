@@ -13,3 +13,8 @@
   1. npm uninstall node-Sass
   
   2. npm install --save-dev sass
+
+28/12/21
+
+- Had to delete the piece of code I copy/pasted on webpack.config because npm start wouldn't run
+- To style react icons (FA ones) I needed to use IconContext.Provider

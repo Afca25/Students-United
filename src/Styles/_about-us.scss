@@ -47,21 +47,22 @@
       align-items: flex-start;
       gap: 25px;
 
-      & p + p {
+      & > p {
         font-weight: $semi-bold;
       }
     }
 
   }
 
-  .icon {
-    color: $accent-yellow;
-    size: 1.5rem;
-  }
+  //icons styling done inline
 
 }
 
 .gradient {
   background: linear-gradient(to right, $secondary-blue, hsla(0,0,0,0));
+  width: 100%;
+}
+.gradient--dark {
+  background: linear-gradient(to right, $primary-blue, hsla(0,0,0,0));
   width: 100%;
 }

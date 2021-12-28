@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+.contact-us__ {
+  &container {
+    height: 100%;
+  }
+  
+  &gradient {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    &__header {
+      margin-bottom: $margin-bottom-desktop;
+    }
+    
+    &__container {
+      background-color: $primary-blue-darker;
+      padding: 50px;
+      border-radius: $border-radius;
+    }
+
+    &__content {
+      border-radius: $border-radius;
+      padding: .4rem .5rem;
+      border: 1px solid $primary-blue-darker;
+
+    }
+  }  
+
+  &text__ {
+    &sub-header {
+      margin-bottom: $margin-bottom-desktop;
+    }
+  }
+}
+
+#disabled {
+  color: $secondary-gray;
+}
