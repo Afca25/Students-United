@@ -24,8 +24,14 @@ h2 {
 a.link {
   color: v.$accent-yellow;
   font: inherit;
+  font-size: 1.2rem;
   font-weight: v.$semi-bold;
   text-decoration: none;
+  transition: all .3s linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 //1920 769
 

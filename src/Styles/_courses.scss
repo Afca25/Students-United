@@ -12,6 +12,70 @@
 
   &module {
     background-color: $primary-blue-darker;
+    width: 55%;
+    max-width: 900px;
+    border-radius: $border-radius;
+    display: flex;
+
+    &__container {
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    &__img__container {
+      width: 35%;
+      padding: 25vh 8vw;
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &__button-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      &__btn {
+        padding: .5rem 0;
+        background-color: $primary-blue-lighter;
+        border: none;
+        color: $primary-white;
+        font-weight: $semi-bold;
+        cursor: pointer;
+        transition: all .3ms linear;
+
+        &:hover:not(.active) {
+          background-color: $secondary-blue;
+        }
+
+        &.active {
+          background-color: $primary-blue-darker;
+        }
+      }
+
+      &__btn:nth-child(1) {
+        border-top-left-radius: $border-radius;
+      }
+
+      &__btn:nth-child(3) { 
+        border-top-right-radius: $border-radius;
+      }
+
+    }
+
+    &__content {
+      display: none;
+      padding: 3vh 3vw;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+
+      &__title{
+        margin-bottom: 3vh;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+
   }
 
   &text__{

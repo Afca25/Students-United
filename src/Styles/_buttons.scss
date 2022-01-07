@@ -6,26 +6,27 @@
   font-size: v.$text-size;
   font-weight: v.$bold;
   background: none;
-  padding: 5px 10px;
   margin: 10px;
   cursor: pointer;
   transition: v.$regular-transition;
-
+  
   &.primary {
+    padding: 10px 15px;
     background-color: v.$accent-red;
     border: 1px solid v.$accent-red;
     color: v.$primary-white;
-
+    
     &:hover {
-      background-color: v.$accent-red-darker;
-      border-color: v.$accent-red-darker;
+      background-color: v.$accent-red-lighter;
+      border-color: v.$accent-red-lighter;
     }
   }
 
   &.secondary {
     border: 1px solid v.$accent-yellow;
     color: v.$accent-yellow;
-
+    padding: 5px 10px;
+    
     &:hover {
       background-color: v.$accent-yellow;
       color: v.$primary-white;
