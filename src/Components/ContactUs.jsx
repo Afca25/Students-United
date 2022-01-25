@@ -38,7 +38,6 @@ function ContactUs() {
           <h2 className='contact-us__text__sub-header'>Join us today!</h2>
         </section>
       </div>
-      <Footer />
     </div>
   )
 }

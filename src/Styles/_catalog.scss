@@ -1,0 +1,8 @@
+@use './variables' as *;
+
+.catalog {
+  &__container {
+    height: 80vh;
+    background-color: $primary-blue;
+  }
+}

@@ -10,7 +10,7 @@ function AboutUs() {
       backgroundSize: "cover",
       backgroundPosition: "top center",
     }}>
-      <div className="about-us__gradient gradient">
+      <div className="about-us__gradient gradient" id="gradient">
         <section className="about-us__text-content">
           <h1 className="about-us__header">About Us</h1>
           <h2 className='about-us__sub-header'>

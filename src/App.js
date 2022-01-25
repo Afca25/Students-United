@@ -10,6 +10,8 @@ import Home from './Components/Home';
 import TopCourses from './Components/TopCourses';
 import AboutUs from './Components/AboutUs';
 import ContactUs from './Components/ContactUs';
+import Catalog from "./Components/Catalog";
+import Footer from "./Components/Footer";
 import ErrorPage from "./Components/ErrorPage";
 
 function App() {
@@ -21,8 +23,10 @@ function App() {
         <Route path="/top-courses" element={<TopCourses />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/catalog" element={<Catalog />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

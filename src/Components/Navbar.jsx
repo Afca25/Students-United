@@ -16,6 +16,7 @@ function Navbar() {
           <ul>
             <li><Link to="/top-courses">Top Courses</Link></li>
             <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/catalog">Catalog</Link></li>
           </ul>
           <div className="navbar__container__button">
             <button

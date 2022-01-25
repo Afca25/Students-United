@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.67rem;
+  font-weight: 600;
+  color: #dbdee6;
+}
+
+a.link {
+  color: #fbaf00;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+a.link:hover {
+  transform: scale(1.1);
+}
+
+p {
+  color: #dbdee6;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070b12;
+  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0.5vh 0;
+}
+.navbar__container__logo {
+  width: 10vw;
+  height: 5vh;
+  padding-left: 3.5vw;
+  display: grid;
+  place-content: center;
+}
+.navbar__container__links {
+  display: flex;
+}
+.navbar__container__links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+.navbar__container__links ul a {
+  text-decoration: none;
+  color: #dbdee6;
+}
+.navbar__container__links ul a:hover {
+  color: #ffffff;
+}
+.navbar__container__button {
+  padding: 0 3.5vw;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25vw;
+  font-weight: 700;
+  background: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.btn.primary {
+  padding: 10px 15px;
+  background-color: #9e0800;
+  border: 1px solid #9e0800;
+  color: #ffffff;
+}
+.btn.primary:hover {
+  background-color: #ff1205;
+  border-color: #ff1205;
+}
+.btn.secondary {
+  border: 1px solid #fbaf00;
+  color: #fbaf00;
+  padding: 5px 10px;
+}
+.btn.secondary:hover {
+  background-color: #fbaf00;
+  color: #ffffff;
+}
+
+/* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
+.home__container {
+  height: 100vh;
+}
+.home__gradient {
+  /*     padding-bottom: 6vh; */
+}
+.home__header {
+  color: #ffffff;
+  margin-bottom: 8vh;
+}
+.home__sub-header {
+  color: #dbdee6;
+}
+.home__text-content {
+  padding: 25vh 0;
+  padding-left: 10vw;
+}
+.home__btn#cta {
+  padding-left: 20vw;
+  margin-bottom: auto;
+}
+
+.gradient#gradient {
+  background: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 100%;
+}
+
+.top-courses__container {
+  background-color: #0E1625;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top-courses__module {
+  background-color: #070b12;
+  width: 55%;
+  max-width: 900px;
+  border-radius: 5px;
+  display: flex;
+}
+.top-courses__module__container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.top-courses__module__img__container {
+  width: 35%;
+  padding: 25vh 8vw;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.top-courses__module__button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.top-courses__module__button-container__btn {
+  padding: 0.5rem 0;
+  background-color: #131d31;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3ms linear;
+}
+.top-courses__module__button-container__btn:hover:not(.active) {
+  background-color: #223daa;
+}
+.top-courses__module__button-container__btn.active {
+  background-color: #070b12;
+}
+.top-courses__module__button-container__btn:nth-child(1) {
+  border-top-left-radius: 5px;
+}
+.top-courses__module__button-container__btn:nth-child(3) {
+  border-top-right-radius: 5px;
+}
+.top-courses__module__content {
+  display: none;
+  padding: 3vh 3vw;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.top-courses__module__content__title {
+  margin-bottom: 3vh;
+}
+.top-courses__module__content.active {
+  display: block;
+}
+.top-courses__text__header {
+  margin-bottom: 65px;
+}
+.top-courses__text__sub-header {
+  margin-bottom: 65px;
+}
+.top-courses__text__content {
+  margin-bottom: 65px;
+}
+.top-courses__text__link {
+  margin-left: 150px;
+}
+
+/* @import url(..\Resources\brooke-cagle-g1Kr4Ozfoac-unsplash.jpg); */
+.about-us__container {
+  height: 100%;
+  position: relative;
+}
+.about-us__gradient {
+  padding-bottom: 34vh;
+  height: 100%;
+}
+.about-us__header {
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+.about-us__sub-header {
+  color: #dbdee6;
+  margin-bottom: 65px;
+}
+.about-us__text-content {
+  padding: 11.75vh 0 0 0;
+  padding-left: 10vw;
+  margin-bottom: 65px;
+}
+.about-us__panel__container {
+  width: 100%;
+  height: 240px;
+  background-color: #0E1625;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us__panel__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+.about-us__panel__content > p {
+  font-weight: 600;
+}
+
+.gradient {
+  background: linear-gradient(to right, #223daa, rgba(0, 0, 0, 0));
+  width: 100%;
+}
+
+.gradient--dark {
+  background: linear-gradient(to right, #0E1625, rgba(0, 0, 0, 0));
+  width: 100%;
+}
+
+.contact-us__container {
+  height: 100%;
+}
+.contact-us__gradient {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-us__form__header {
+  margin-bottom: 65px;
+}
+.contact-us__form__container {
+  background-color: #070b12;
+  padding: 50px;
+  border-radius: 5px;
+}
+.contact-us__form__content {
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #070b12;
+}
+.contact-us__text__sub-header {
+  margin-bottom: 65px;
+}
+
+#disabled {
+  color: #dbdee6;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #070b12;
+  z-index: 100;
+  height: 100px;
+}
+.footer__container__links {
+  display: flex;
+}
+.footer__container__links ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+.footer__container__links ul a {
+  text-decoration: none;
+  color: #dbdee6;
+}
+.footer__container__links ul a:hover {
+  color: #ffffff;
+}
+.footer__container__button {
+  padding: 0 3.5vw;
+}/*# sourceMappingURL=App.css.map */
